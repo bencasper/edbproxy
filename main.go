@@ -26,6 +26,7 @@ func main() {
 			context.XML(200, xmlContent)
 		case "edbReturnTradeGet":
 			edbResp := mock.EdbProxy(context.Request, context.Writer)
+			fmt.Println(string(edbResp))
 			context.Data(200, "application/xml; charset=utf-8", edbResp)
 		case "edbTradeAdd":
 			edbResp := mock.EdbProxy(context.Request, context.Writer)
