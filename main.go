@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"mockEdb/mock"
+	"edbproxy/mock"
 	"fmt"
 	"encoding/xml"
 )
